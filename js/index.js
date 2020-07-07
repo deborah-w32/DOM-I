@@ -59,10 +59,17 @@ headerLinks.forEach((item) => {
 
 // .appendChild
 
+const newAppend = document.createElement('a')
+const aName = document.createTextNode('Blog')
+newAppend.appendChild(aName)
 const headerNav = document.querySelector('nav')
-headerNav.appendChild(endingLink)
-endingLink[0].textContent = 'Our Blog'
+headerNav.appendChild(newAppend)
 
+// .prepend
+const newPrepend = document.createElement('a')
+const firstAName = document.createTextNode('Locations')
+newPrepend.prepend(firstAName)
+headerNav.prepend(newPrepend)
 
 // img#cta-img - needs an image src
 
@@ -123,4 +130,3 @@ contactSectionP[2].textContent = siteContent['contact']['email']
 const copyright = document.querySelectorAll('footer p')
 copyright[0].textContent = siteContent['footer']['copyright']
 
-// push test
