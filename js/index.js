@@ -41,4 +41,18 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+// div.container - link titles
+
+const headerLinks = document.querySelector('a.container')
+
+// img#cta-img - needs an image src
+
+const codeSnippetImage = document.querySelector('img#cta-img')
+
+// div.text-content - h4 text, p text for both top-content and bottom-content
+// img#middle-img - needs an image src
+// section.contact - needs text content
+// footer - needs copyright
+
+
 // push test
