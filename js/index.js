@@ -158,3 +158,7 @@ buttonHover.addEventListener("mouseenter", function(event) {
 buttonHover.addEventListener("mouseout", function(event) {
   event.target.style.background = "white";
 })
+
+const backgroundColor = document.querySelector('*');
+
+backgroundColor.style.background = "#4F646F";
