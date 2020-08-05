@@ -54,7 +54,7 @@ headerLinks[5].textContent = siteContent['nav']['nav-item-6'];
 // change Nav text color to green
 
 headerLinks.forEach((item) => {
-  item.style.color = 'green';
+  item.style.color = "green";
 });
 
 // .appendChild
@@ -129,3 +129,32 @@ contactSectionP[2].textContent = siteContent['contact']['email'];
 
 const copyright = document.querySelectorAll('footer p');
 copyright[0].textContent = siteContent['footer']['copyright'];
+
+// Stretch goals
+
+const paraFont = document.querySelectorAll('p');
+
+paraFont.forEach((item) => {
+  item.style.fontFamily = "Inconsolata, monospace";
+});
+
+const titleColors = document.querySelectorAll('h1');
+
+titleColors.forEach((item) => {
+  item.style.color = "#9be7ad";
+});
+
+const subtitleColors = document.querySelectorAll('h4');
+
+subtitleColors.forEach((item) => {
+  item.style.color = '#0bfdff';
+});
+
+const buttonHover = document.querySelector('button')
+
+buttonHover.addEventListener("mouseenter", function(event) {
+  event.target.style.background = "#ffb7ff";
+})
+buttonHover.addEventListener("mouseout", function(event) {
+  event.target.style.background = "white";
+})
